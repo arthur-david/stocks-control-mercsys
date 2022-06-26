@@ -1,4 +1,4 @@
-package br.com.mercadinhofamilia.stocks;
+package br.com.mercsys.stocks;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
