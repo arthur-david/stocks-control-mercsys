@@ -1,4 +1,4 @@
-package br.com.mercadinhofamilia.stocks;
+package br.com.mercsys.stocks;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
