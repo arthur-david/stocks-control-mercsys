@@ -1,8 +1,9 @@
-package br.com.mercsys.stocks.entities;
+package br.com.mercsys.stocks.entities.products;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import br.com.mercsys.stocks.entities.categories.Category;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -35,7 +37,7 @@ public class Product {
 
     private Integer quantity;
     
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Category category;
 
     @CreationTimestamp
