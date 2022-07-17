@@ -3,7 +3,8 @@
 CREATE TABLE IF NOT EXISTS category (
     id BIGSERIAL PRIMARY KEY,
     name VARCHAR NOT NULL,
-    created_at TIMESTAMP
+    created_at TIMESTAMP,
+    updated_at TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS product (
